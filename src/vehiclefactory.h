@@ -22,6 +22,10 @@ class VehicleFactory {
                     return std::make_unique<MotorBike>();
                 case VehicleType::SCOOTER:
                     return std::make_unique<Scooter>();
+                case VehicleType::CAR:
+                    return std::make_unique<Car>();
+                case VehicleType::BUS:
+                    return std::make_unique<Bus>();
                 default: 
                     return nullptr;
             }

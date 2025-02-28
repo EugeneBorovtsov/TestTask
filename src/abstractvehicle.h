@@ -6,9 +6,10 @@ class AbstractVehicle {
         virtual void showInfo() = 0;
         virtual ~AbstractVehicle() = default;
 
-        std::string vehicleName;
-        int wheelCount;
-        float maxSpeed;
+    protected:
+        std::string _vehicleName;
+        int _wheelCount;
+        float _maxSpeed;
 };
 
 #endif // ABSTRACTVEHICLE_H
