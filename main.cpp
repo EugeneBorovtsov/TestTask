@@ -5,6 +5,8 @@ using namespace std;
 
 int main(int argc, char* argv[]) {
 	for (int argn = 1; argn < argc; argn++) {		//Обработка всех поступивших на вход параметров (кроме нулевого, содержащего название файла)
+		cout << endl; 	// Разграничитель
+
 		try {
 			int vehicleTypeIndex = stoi(argv[argn]);	//Преобразование строки к целочисленному типу (invalid_argument если преобразование невозможно)
 			VehicleFactory::VehicleType vehicleType = VehicleFactory::intToVehicleType(vehicleTypeIndex);
