@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include "src/vehiclefactory.h"
 
 using namespace std;
